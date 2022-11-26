@@ -32,26 +32,27 @@ th {
   border-left: 1px solid #fdfaf9;
 }
 
-th {
+th:not(.film-title) {
   color: #e2f0f2;
   background-color: #1c96b2;
 }
 
-td:nth-child(1),
 th:nth-child(1) {
   width: 25%;
   padding-left: 5px;
   text-align: left;
+  border-bottom: none;
 }
 
 tr:nth-child(odd) {
   background-color: #efeeed;
 }
 
-td {
+td,
+.film-title {
   color: #564e42;
 }
 
-td.film-title {
+th.film-title {
   font-weight: 900;
 }
